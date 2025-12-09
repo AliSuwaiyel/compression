@@ -16,6 +16,6 @@ A web-based text compression tool demonstrating **Huffman Coding** and **LZW Com
 ## Participants
 
 - [@Ali Aluwaiyel](https://github.com/AliSuwaiyel)
-- [@progKhalid](https://github.com/progKhalid)
-- [@AliSuwaiyel](https://github.com/AliSuwaiyel)
-- [@AliSuwaiyel](https://github.com/AliSuwaiyel)  
+- [@Khaled Alrehyani](https://github.com/progKhalid)
+- [@Omar Alharbi](https://github.com/AliSuwaiyel)
+- [@Abdulaziz Alharbi](https://github.com/)  
