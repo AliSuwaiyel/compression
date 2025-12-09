@@ -27,6 +27,14 @@ body {
     justify-content: center;
 }
 
+h1 {
+    text-align: center;
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--pp-blue);
+    margin-bottom: 30px;
+}
+
 /* Main container */
 .pp-container {
     width: 950px;
