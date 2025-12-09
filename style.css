@@ -1,22 +1,21 @@
-/* Pied Piper Colors */
+/* Dark Blue Theme */
 :root {
-    --pp-green: #00c853;
-    --pp-green-dark: #009f42;
-    --pp-bg: #eafaf1;
+    --pp-blue: #0d47a1;          /* الأساسي */
+    --pp-blue-dark: #08306b;     /* الغامق */
+    --pp-bg: #e8eef7;            /* خلفية فاتحة مائلة للأزرق */
     --pp-text: #0a0a0a;
     --pp-card-bg: #ffffff;
-    --pp-border: #ccebdc;
+    --pp-border: #b8c7e0;
 }
 
 .pp-img {
-    display: block;           /* Makes centering work */
-    margin: 15px auto;        /* Centers image horizontally */
-    width: 500px;             /* Set a standard width (change if needed) */
-    height: 500px;            /* Makes all images equal height */
-    object-fit: cover;        /* Keeps aspect ratio while cropping nicely */
-    border-radius: 10px;      /* Optional — smooth edges */
+    display: block;
+    margin: 15px auto;
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
 }
-
 
 /* Page */
 body {
@@ -44,7 +43,7 @@ body {
 .pp-logo {
     font-size: 42px;
     font-weight: 800;
-    color: var(--pp-green);
+    color: var(--pp-blue);
     letter-spacing: -1px;
 }
 
@@ -58,7 +57,6 @@ body {
 .pp-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
     gap: 20px;
 }
 
@@ -77,7 +75,7 @@ body {
 
 .pp-card h2 {
     margin-top: 0;
-    color: var(--pp-green-dark);
+    color: var(--pp-blue-dark);
     font-size: 18px;
 }
 
@@ -88,10 +86,10 @@ textarea {
     padding: 10px;
     font-size: 15px;
     font-family: monospace;
-    border: 1px solid #dce5df;
+    border: 1px solid #cdd7eb;
     border-radius: 8px;
     resize: vertical;
-    background: #f9fefa;
+    background: #f4f7fc;
 }
 
 /* Algorithm selection */
@@ -116,7 +114,7 @@ textarea {
 }
 
 .pp-btn {
-    background: var(--pp-green);
+    background: var(--pp-blue);
     color: white;
     border: none;
     padding: 10px 18px;
@@ -129,13 +127,13 @@ textarea {
 }
 
 .pp-btn:hover {
-    background: var(--pp-green-dark);
+    background: var(--pp-blue-dark);
 }
 
 .pp-btn-secondary {
     background: transparent;
-    border: 2px solid var(--pp-green);
-    color: var(--pp-green);
+    border: 2px solid var(--pp-blue);
+    color: var(--pp-blue);
     padding: 8px 16px;
     border-radius: 6px;
     cursor: pointer;
@@ -144,7 +142,7 @@ textarea {
 }
 
 .pp-btn-secondary:hover {
-    background: var(--pp-green);
+    background: var(--pp-blue);
     color: white;
 }
 
