@@ -79,6 +79,10 @@ body {
     font-size: 18px;
 }
 
+.pp-card h2:not(:first-child) {
+    margin-top: 20px;
+}
+
 /* Textareas */
 textarea {
     width: 100%;
@@ -90,6 +94,7 @@ textarea {
     border-radius: 8px;
     resize: vertical;
     background: #f4f7fc;
+    box-sizing: border-box;
 }
 
 /* Algorithm selection */
