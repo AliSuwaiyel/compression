@@ -15,16 +15,10 @@
                 <h2>Input Text</h2>
                 <textarea id="inputText" placeholder="Enter text to compress..."></textarea>
 
-                <div class="algo-group">
-                    <label class="alg">
-                        <input type="radio" name="algo" value="huffman">
-                        Huffman Coding
-                    </label>
-                    <label class="alg">
-                        <input type="radio" name="algo" value="lzw">
-                        LZW Compression
-                    </label>
-                </div>
+                <select id="algo" class="algo-select">
+                    <option value="huffman">Huffman Coding</option>
+                    <option value="lzw">LZW Compression</option>
+                </select>
 
                 <div class="pp-buttons">
                     <button class="pp-btn" onclick="encode()">Encode</button>
