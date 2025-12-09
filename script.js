@@ -71,15 +71,14 @@ function encode() {
     const text = document.getElementById("inputText").value;
     if (!text) return alert("Enter text to encode.");
 
-    const algo = document.querySelector("input[name='algo']:checked");
-    if (!algo) return alert("Select an algorithm.");
+    const algo = document.getElementById("algo").value;
 
-    lastAlgo = algo.value;
+    lastAlgo = algo;
     lastOriginal = text;
 
 
     // HUFFMAN
-    if (algo.value === "huffman") {
+    if (algo === "huffman") {
 
         const result = huffmanEncode(text);
 
@@ -95,7 +94,7 @@ function encode() {
 
 
     // LZW
-    if (algo.value === "lzw") {
+    if (algo === "lzw") {
 
         const codes = lzwEncode(text);
 

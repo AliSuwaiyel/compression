@@ -97,19 +97,23 @@ textarea {
 }
 
 /* Algorithm selection */
-.algo-group {
+.algo-select {
+    width: 100%;
+    padding: 10px 12px;
     margin: 12px 0;
-}
-
-.alg {
-    display: inline-flex;
-    align-items: center;
-    margin-right: 15px;
+    font-size: 15px;
     font-weight: 500;
+    border: 1px solid #cdd7eb;
+    border-radius: 8px;
+    background: #f4f7fc;
+    color: var(--pp-text);
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
-.alg input {
-    margin-right: 6px;
+.algo-select:focus {
+    outline: none;
+    border-color: var(--pp-blue);
 }
 
 /* Buttons */
