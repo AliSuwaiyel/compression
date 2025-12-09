@@ -8,7 +8,7 @@ let lastOriginal = "";
 
 
 // ----------------------------------------------------------
-// STATS FUNCTION (FINAL VERSION)
+// STATS FUNCTION 
 // ----------------------------------------------------------
 function updateStats(originalText, compressedData, algo) {
 
@@ -27,7 +27,7 @@ function updateStats(originalText, compressedData, algo) {
 
 
     // ----------------------------------------------------------
-    // HUFFMAN STATS  (percentage reduction)
+    // HUFFMAN STATS  
     // ----------------------------------------------------------
     if (algo === "huffman") {
 
