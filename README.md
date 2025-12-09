@@ -18,4 +18,4 @@ A web-based text compression tool demonstrating **Huffman Coding** and **LZW Com
 - [@Ali Aluwaiyel](https://github.com/AliSuwaiyel)
 - [@Khaled Alrehyani](https://github.com/progKhalid)
 - [@Omar Alharbi](https://github.com/Better-Call-Omar)
-- [@Abdulaziz Alharbi](https://github.com/)  
+- [@Abdulaziz Alharbi](https://github.com/AbdulazizHRB)  
