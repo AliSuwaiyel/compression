@@ -1,0 +1,162 @@
+/* Pied Piper Colors */
+:root {
+    --pp-green: #00c853;
+    --pp-green-dark: #009f42;
+    --pp-bg: #eafaf1;
+    --pp-text: #0a0a0a;
+    --pp-card-bg: #ffffff;
+    --pp-border: #ccebdc;
+}
+
+.pp-img {
+    display: block;           /* Makes centering work */
+    margin: 15px auto;        /* Centers image horizontally */
+    width: 500px;             /* Set a standard width (change if needed) */
+    height: 500px;            /* Makes all images equal height */
+    object-fit: cover;        /* Keeps aspect ratio while cropping nicely */
+    border-radius: 10px;      /* Optional — smooth edges */
+}
+
+
+/* Page */
+body {
+    background: var(--pp-bg);
+    margin: 0;
+    padding: 40px 0;
+    font-family: "Inter", Arial, sans-serif;
+    color: var(--pp-text);
+    display: flex;
+    justify-content: center;
+}
+
+/* Main container */
+.pp-container {
+    width: 950px;
+    max-width: 90%;
+}
+
+/* Header */
+.pp-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.pp-logo {
+    font-size: 42px;
+    font-weight: 800;
+    color: var(--pp-green);
+    letter-spacing: -1px;
+}
+
+.pp-sub {
+    font-size: 20px;
+    font-weight: 500;
+    opacity: 0.7;
+}
+
+/* Grid layout */
+.pp-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.pp-grid section:last-child {
+    grid-column: span 2;
+}
+
+/* Cards */
+.pp-card {
+    background: var(--pp-card-bg);
+    padding: 20px 24px;
+    border-radius: 14px;
+    border: 1px solid var(--pp-border);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.pp-card h2 {
+    margin-top: 0;
+    color: var(--pp-green-dark);
+    font-size: 18px;
+}
+
+/* Textareas */
+textarea {
+    width: 100%;
+    min-height: 90px;
+    padding: 10px;
+    font-size: 15px;
+    font-family: monospace;
+    border: 1px solid #dce5df;
+    border-radius: 8px;
+    resize: vertical;
+    background: #f9fefa;
+}
+
+/* Algorithm selection */
+.algo-group {
+    margin: 12px 0;
+}
+
+.alg {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-weight: 500;
+}
+
+.alg input {
+    margin-right: 6px;
+}
+
+/* Buttons */
+.pp-buttons {
+    margin-top: 10px;
+}
+
+.pp-btn {
+    background: var(--pp-green);
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.pp-btn:hover {
+    background: var(--pp-green-dark);
+}
+
+.pp-btn-secondary {
+    background: transparent;
+    border: 2px solid var(--pp-green);
+    color: var(--pp-green);
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.pp-btn-secondary:hover {
+    background: var(--pp-green);
+    color: white;
+}
+
+/* Stats */
+.stat-line {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 0;
+    border-bottom: 1px solid var(--pp-border);
+    font-size: 15px;
+}
+
+.stat-line:last-child {
+    border-bottom: none;
+}

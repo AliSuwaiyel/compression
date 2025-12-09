@@ -1,11 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Pied Piper Compression Studio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<h1>Hello</h1>
+     <audio src="/audio/yhlmon.mp3" autoplay loop hidden></audio>
+    <div class="pp-container">
+        <header class="pp-header">
+           
+           <img src="/logo/TheOne.jpg" class="pp-img">
+           <img src="/logo/TheOne2.png" class="pp-img">
+           <img src="/logo/Theone3.webp" class="pp-img">
+           <img src="/logo/TheOne4.avif" class="pp-img">
+        </header>
+
+        <main class="pp-grid">
+
+            <section class="pp-card">
+                <h2>Input Text</h2>
+                <textarea id="inputText" placeholder="Enter text to compress..."></textarea>
+
+                <div class="algo-group">
+                    <label class="alg">
+                        <input type="radio" name="algo" value="huffman">
+                        Huffman Coding
+                    </label>
+                    <label class="alg">
+                        <input type="radio" name="algo" value="lzw">
+                        LZW Compression
+                    </label>
+                </div>
+
+                <div class="pp-buttons">
+                    <button class="pp-btn" onclick="encode()">Encode</button>
+                    <button class="pp-btn" onclick="decode()">Decode</button>
+                    <button class="pp-btn-secondary" onclick="clearAll()">Clear</button>
+                </div>
+            </section>
+
+            <section class="pp-card">
+                <h2>Encoded Output</h2>
+                <textarea id="encodedOutput" readonly placeholder="Encoded data will appear here..."></textarea>
+
+                <h2>Decoded Output</h2>
+                <textarea id="decodedOutput" readonly placeholder="Decoded text will appear here..."></textarea>
+            </section>
+
+            <section class="pp-card">
+                <h2>Compression Stats</h2>
+
+                <div class="stat-line">
+                    <span>Original Size:</span>
+                    <span id="origSize">–</span>
+                </div>
+                <div class="stat-line">
+                    <span>Compressed Size:</span>
+                    <span id="compSize">–</span>
+                </div>
+                <div class="stat-line">
+                    <span>Compression Ratio:</span>
+                    <span id="ratio">–</span>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
