@@ -1,8 +1,7 @@
-/* Dark Blue Theme */
 :root {
-    --pp-blue: #0d47a1;          /* الأساسي */
-    --pp-blue-dark: #08306b;     /* الغامق */
-    --pp-bg: #e8eef7;            /* خلفية فاتحة مائلة للأزرق */
+    --pp-blue: #0d47a1;          
+    --pp-blue-dark: #08306b;     
+    --pp-bg: #e8eef7;            
     --pp-text: #0a0a0a;
     --pp-card-bg: #ffffff;
     --pp-border: #b8c7e0;
